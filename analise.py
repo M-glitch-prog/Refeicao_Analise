@@ -8,3 +8,8 @@ plt.title("Refeições Escolares")
 plt.xlabel("Refeições")
 plt.ylabel("Quantidade")
 plt.show()
+
+print (dados.info())
+consumo= dados["quantidade_consumida"].mean()
+maior_desperdicio=dados["desperdicio_estimado"].max()
+apareceu=(dados["refeicao"].value_counts())
